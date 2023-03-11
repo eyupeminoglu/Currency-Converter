@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Currency Converter</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+		<script src="js/app.js"></script>
+    </head>
+    <body>
+        <div class="py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl sm:text-center">
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-5xl">Currency Converter</h2>
+                </div>
+                <div class="mx-auto mt-16 max-w-3xl rounded-3xl ring-2 ring-purple-500 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none ">
+                    <div class="p-8 sm:p-10 lg:flex-auto">
+                        <div class="grid md:grid-cols-4 md:gap-6">
+                            <div class="relative z-0 w-full mb-6 group">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="amount"> Amount </label>
+                                <input type="number" class="block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3" id="amount" placeholder="0">
+                            </div>
+                            <div class="relative z-0 w-full mb-6 group">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="currency">Currency</label>
+                                <div class="relative">
+                                    <select class="appearance-none w-full bg-gray-200 py-3 px-4 pr-8" id="currency"></select>
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative z-0 w-full mb-20 group">
+								<div class="relative top-7">
+                                    <h3 class="text-2xl text-center font-bold tracking-tight text-gray-900">Convert to</h3>
+                                </div>
+                            </div>
+                            <div class="relative z-0 w-full mb-6 group">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="currency">Currency</label>
+                                <div class="relative">
+                                    <select class="appearance-none w-full bg-gray-200 py-3 px-4 pr-8" id="currency2"></select>
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+						<div class="z-0 w-full mb-6">
+                            <p class="mt-6 flex items-baseline justify-center gap-x-2">
+								<span class="text-5xl font-bold tracking-tight text-gray-900" id="result">0</span>
+								<span class="text-sm font-semibold tracking-wide text-gray-600" id="converted-currency">-</span>
+							</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-6 text-xs leading-5 text-gray-600">Designed by Eyup Eminoglu</p>
+            </div>
+        </div>
+    </body>
+</html>

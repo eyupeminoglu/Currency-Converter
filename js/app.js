@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         convertCurrency(amount, selectCurrency.options[selectCurrency.selectedIndex].text, selectCurrency2.options[selectCurrency2.selectedIndex].text);
     });
 
-    amount.addEventListener('input', function() {
+    amount.addEventListener('input', () => {
         const selectCurrency = document.getElementById("currency");
         const selectCurrency2 = document.getElementById("currency2");
         convertCurrency(amount.value, selectCurrency.options[selectCurrency.selectedIndex].text, selectCurrency2.options[selectCurrency2.selectedIndex].text);
